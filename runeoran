@@ -1,0 +1,17 @@
+#!/bin/zsh
+
+# 设置检查进程的时间间隔（以分钟为单位）
+interval=60
+
+while true; do
+  # 检查进程是否存在
+  if ! pgrep -x "uieoran" >/dev/null; then
+    echo "进程不存在，正在启动..."
+    # 启动进程的命令
+    ~/.sh/uieoran &
+  fi
+
+  # 等待一段时间后再次检查
+  sleep $interval
+done
+

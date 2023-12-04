@@ -1,0 +1,5 @@
+#!/bin/zsh
+
+#export EORAN=~/.sh/eoran
+EORAN=$(~/.sh/eoran)
+notify-send -a "Run Command Widget" -i "kghostview" "$EORAN"

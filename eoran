@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# 读取文件0006中的单词列表
+#read -p "请输入文件0006的路径: " file_path
+
+words=$(cat "$HOME/0000")
+
+# 随机生成一个序号
+random_num=$(( RANDOM % 1000 + 1 ))
+
+# 根据序号从单词列表中抽取一个单词
+selected_word=$(echo "$words" | awk -v num=$random_num '{if (NR == num) {print $0}}')
+
+# 输出抽取的单词
+echo "抽取的单词是: $selected_word"
