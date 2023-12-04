@@ -9,6 +9,8 @@
 
 2.在.zshrc末行添加: alias runeoran='~/.sh/runeoran'
 
+执行runeoran,推荐设置开机启动
+
 词库共1000词,来自:
 
 https://reto.cn/php/hanyu/vortoj/1000-bazaj-vortoj-kun-voclego-esperante-cine/
