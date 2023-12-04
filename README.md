@@ -20,3 +20,5 @@ https://reto.cn/php/hanyu/vortoj/1000-bazaj-vortoj-kun-voclego-esperante-cine/
 编辑文件0000,末行添加
 
 (序号) + (单词) + (翻译)
+
+![image text]001.png
